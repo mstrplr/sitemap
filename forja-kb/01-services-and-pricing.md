@@ -59,16 +59,19 @@ won't touch your GPS or cell signal."
 - **20% VLT** — dark, good privacy, common on rear windows
 - **5% VLT** — very dark ("limo"), legal only on certain windows
 
-### Legal note — handle carefully
+### Legal limits
 
-Florida law limits how dark each window can be, and the limits differ between
-sedans and SUVs/vans, and between front sides, rear sides, and the rear window.
+Florida caps how dark each window can go, and the back-window limits differ
+between sedans and SUVs/vans. Short version:
 
-**The bot must not state specific legal percentages as fact.** Say that Florida
-has legal limits, that we always install to a legal configuration, and that Jose
-confirms the exact legal darkness for their specific vehicle at booking. Getting
-this wrong is a real liability, and a chatbot is the wrong place to be
-authoritative about vehicle law.
+- **Front side windows:** more than 28% VLT — every vehicle
+- **Rear side + rear window:** more than 15% on sedans, more than 6% on SUVs,
+  vans, and trucks
+
+**Always ask what vehicle they have before quoting a limit.** Full detail —
+reflectivity caps, the AS-1 windshield line, medical exemptions, and the
+film-VLT vs. finished-VLT distinction — is in `05-florida-tint-law.md`. Read
+that file's rules before answering any legal question.
 
 ## Other services
 

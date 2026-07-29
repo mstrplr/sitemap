@@ -101,13 +101,29 @@ incluye en tu precio.
 
 ## How dark can I legally go? / ¿Qué tan oscuro puedo ponerlo?
 
-**EN:** Florida sets legal limits, and they're different for front windows, rear
-windows, and for SUVs versus sedans. We always install a legal setup — Jose will
-confirm exactly what's allowed for your specific vehicle when he books you in.
+**EN (sedan):** In Florida your front side windows need to let more than 28% of
+light through, and the back sides and rear window more than 15%. We always
+install legal, so you're covered if you're ever stopped.
 
-**ES:** Florida tiene límites legales, y cambian según la ventana y si es sedán
-o SUV. Siempre instalamos algo legal — Jose te confirma exactamente qué se
-permite para tu vehículo cuando agenden.
+**EN (SUV/van/truck):** Front sides are the same 28%, but the back is where you
+get room — back sides and rear window can go down to 6%. That's properly dark,
+and it surprises most people.
+
+**ES (sedán):** En Florida las ventanas delanteras tienen que dejar pasar más
+del 28% de luz, y las traseras más del 15%. Siempre instalamos legal, así que
+estás cubierto si te para la policía.
+
+**ES (SUV/van):** Adelante es el mismo 28%, pero atrás tienes más margen — las
+traseras pueden bajar hasta 6%. Eso queda bien oscuro, y a mucha gente le
+sorprende.
+
+**Then, always add:** the film's rating and the finished window aren't the same
+number — your factory glass already blocks some light. Jose measures your glass
+and picks the film that lands legal for your car.
+
+> Full detail, including reflectivity limits, the AS-1 windshield line, and
+> medical exemptions: see `05-florida-tint-law.md`. Ask which vehicle they have
+> before quoting a limit — sedan and SUV rules differ in the back.
 
 ---
 

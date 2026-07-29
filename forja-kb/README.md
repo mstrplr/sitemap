@@ -12,6 +12,7 @@ skills. Drop these files into `member/kb/` in your bot folder after
 | `02-faq.md` | Bilingual FAQ, ready to use |
 | `03-rules-and-handoff.md` | Guardrails and handoff criteria |
 | `04-tone.md` | Voice, WhatsApp formatting, seasonal angles |
+| `05-florida-tint-law.md` | VLT limits by vehicle class, AS-1 line, reflectivity, exemptions |
 
 ## The one design decision worth knowing
 
@@ -48,6 +49,10 @@ Everything marked `[CONFIRM]` in the KB:
 - [ ] Warranty terms per film type
 - [ ] Whether PPF, ceramic coating, and fleet work are live services
 - [ ] Whether the bot may quote prices (see above)
+- [ ] **Verify the Florida VLT limits in `05-florida-tint-law.md`** against the
+      current FLHSMV statute text. They've been stable for years, but the bot
+      states them to customers as fact — worth one check against the source, and
+      a re-check annually.
 
 ## Ready-to-run init command
 
