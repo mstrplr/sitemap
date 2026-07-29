@@ -102,33 +102,48 @@ film cure bien. Por fuera no hay problema.
 
 ## Is there a warranty? / ¿Tienen garantía?
 
-**EN:** Lifetime warranty. If the film ever bubbles, peels, or fades on you, we
-take care of it — that's the whole point of using quality film and installing it
-right.
+**EN:** Depends on the film. SunTek and 3M both come with a **lifetime**
+warranty — bubbling, peeling, fading, we handle it. KoolMax, our budget option,
+carries **3 years**.
 
-**ES:** Garantía de por vida. Si el film alguna vez se burbujea, se despega o se
-decolora, nosotros lo resolvemos — para eso usamos film de calidad y lo
-instalamos bien.
+**ES:** Depende del film. SunTek y 3M traen garantía **de por vida** — si se
+burbujea, se despega o se decolora, nosotros lo resolvemos. KoolMax, la opción
+económica, tiene **3 años**.
 
-> Lead with this. A lifetime warranty is a strong differentiator and most
-> competitors don't match it — the estimator skill already flags it as something
-> to highlight. Don't bury it at the end of a message.
+> Lead with the lifetime option. It's a strong differentiator and the estimator
+> skill already flags it as something to highlight — don't bury it.
+>
+> Always tie the warranty to the brand. "Lifetime warranty" said flatly promises
+> something KoolMax doesn't carry.
 >
 > Do **not** invent exclusions, transfer terms, or claim process details. If
-> someone asks what exactly is covered, or is making a claim on existing work,
+> someone asks exactly what's covered, or is making a claim on existing work,
 > hand off to Jose.
 
 ---
 
-## What's the difference between Carbon and Ceramic? / ¿Cuál es la diferencia?
+## What brands do you use? / ¿Qué marcas manejan?
 
-**EN:** Carbon won't fade, blocks heat well, and won't mess with your signal.
-Ceramic is the top tier — it blocks the most heat by a clear margin and lasts
-longest. In Miami sun, ceramic is what most people are happiest with long term.
+**EN:** KoolMax, SunTek, and 3M. The big difference is the warranty — SunTek and
+3M are lifetime, KoolMax is 3 years. What's your budget looking like and I'll
+point you at the right one?
 
-**ES:** El Carbon no se decolora, bloquea bien el calor y no afecta la señal.
-El Ceramic es lo máximo — bloquea muchísimo más calor y dura más. Con el sol de
-Miami, el cerámico es con el que la gente queda más contenta a largo plazo.
+**ES:** KoolMax, SunTek y 3M. La diferencia grande es la garantía — SunTek y 3M
+son de por vida, KoolMax es de 3 años. ¿Cómo andas de presupuesto y te oriento?
+
+---
+
+## Which one should I get? / ¿Cuál me conviene?
+
+**EN:** Honestly, most people are happiest with SunTek or 3M — the lifetime
+warranty is what you want with Miami sun beating on the car every day. KoolMax
+does the job if you're watching the budget, just with 3 years of coverage
+instead. Jose can walk you through both when he gives you pricing.
+
+**ES:** La verdad, la mayoría queda más contenta con SunTek o 3M — la garantía de
+por vida es lo que quieres con el sol de Miami pegándole al carro todos los días.
+KoolMax cumple si andas cuidando el presupuesto, nada más que con 3 años de
+cobertura. Jose te explica las dos cuando te dé el precio.
 
 ---
 
@@ -196,12 +211,8 @@ cuando queda listo el trabajo.
 
 ## What's your number? / ¿Cuál es su número?
 
-Give the tracking number for the channel you're on — see
-`06-phone-and-callrail.md`. Instagram 786-917-4888, GMB 786-882-4116,
-TikTok 786-758-4366.
+**786-285-2690** — call or WhatsApp. Website: **southmiamitint.com**
 
-If you're already on WhatsApp with them, don't hand out a number at all —
+If you're already on WhatsApp with them, no need to hand out the number —
 the conversation is open. Collect their details and tell them Jose will text
 back.
-
-Never give a routing/destination number, and never invent one.

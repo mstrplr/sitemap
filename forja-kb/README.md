@@ -43,21 +43,18 @@ assume it.
 
 Everything marked `[CONFIRM]` in the KB:
 
-- [x] ~~Phone number~~ — resolved: CallRail tracking number per channel, see
-      `06-phone-and-callrail.md`
-- [ ] **Create a CallRail tracking number with source "WhatsApp"** before launch,
-      so the bot's own calls are attributable
-- [ ] Confirm the tracking numbers have SMS enabled if Jose will text follow-ups
-- [x] ~~Hours and days of operation~~ — Mon–Sat 9–5, appointment only, some
-      Sundays when available
-- [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
-      committing to the WhatsApp channel (see `../FORJA-SETUP.md`)
-- [ ] Website URL and social handles
+- [x] ~~Phone~~ — 786-285-2690
+- [x] ~~Website~~ — southmiamitint.com
+- [x] ~~Hours~~ — Mon–Sat 9–5, appointment only, some Sundays when available
 - [x] ~~Payment methods~~ — cash, Zelle, card
-- [x] ~~Warranty~~ — lifetime
-- [ ] **Does lifetime cover all three films, or only Carbon and Ceramic?**
-      Affects what the bot can promise on entry-level dyed film
+- [x] ~~Films and warranty~~ — KoolMax 3 years, SunTek and 3M lifetime
+- [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
+      committing to the WhatsApp channel (see `../FORJA-SETUP.md`) — this is the
+      one that can take the business line down mid-week
+- [ ] Which of SunTek or 3M is the top tier vs. the "most popular" middle
+- [ ] Which film lines Jose stocks within each brand
 - [ ] Whether PPF, ceramic coating, and fleet work are live services
+- [ ] Confirm 786-285-2690 has SMS enabled if Jose will text follow-ups
 - [ ] Whether the bot may quote prices (see above)
 - [ ] **Verify the Florida VLT limits in `05-florida-tint-law.md`** against the
       current FLHSMV statute text. They've been stable for years, but the bot
@@ -73,14 +70,14 @@ see `../FORJA-SETUP.md`). Replace the bracketed values first:
 npx forjabot init --yes --lang en \
   --negocio "Miami Auto Tinting" \
   --que "mobile window tinting — we come to the customer, home or office, anywhere in Miami-Dade" \
-  --ofrece "Window tint installation, mobile service. Films: Standard/Dyed, Carbon, Ceramic. Old tint removal. Lifetime warranty on the work. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
+  --ofrece "Window tint installation, mobile service. Films: KoolMax (3 year warranty), SunTek and 3M (lifetime warranty). Old tint removal. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
   --horario "Monday to Saturday 9am-5pm, by appointment only. Some Sundays when available." \
   --ubicacion "Mobile service across Miami-Dade County: Miami, Hialeah, Doral, Coral Gables, Kendall, Miami Beach, Brickell, Homestead, Cutler Bay, West Miami, Sweetwater" \
-  --telefono "[CallRail WhatsApp tracking number — create it first, see 06-phone-and-callrail.md]" \
-  --web "[YOUR SITE OR INSTAGRAM]" \
+  --telefono "786-285-2690" \
+  --web "southmiamitint.com" \
   --pagos "Cash, Zelle, card. Paid on site when the job is done." \
-  --faq "How much does it cost?, Do you really come to me?, How long does it take?, How long does tint last?, Can I wash the car after?, How dark can I legally go?" \
-  --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Phone numbers come from the CallRail channel map — never give a routing number or invent one. Never confirm an appointment time — collect preference only. Never invent hours, warranty terms, or payment methods. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
+  --faq "How much does it cost?, Do you really come to me?, What are your hours?, How long does it take?, What brands do you use?, Is there a warranty?, How dark can I legally go?, Can I wash the car after?" \
+  --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Warranty depends on the film: SunTek and 3M are lifetime, KoolMax is 3 years — never say lifetime without naming the brand. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Service is appointment only Mon-Sat 9-5, some Sundays when available — never promise same-day, walk-ins, or a guaranteed Sunday. Never confirm an appointment time, only collect the preferred day. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
   --tono cercano \
   --cerebro claude
 ```
