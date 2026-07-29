@@ -41,7 +41,10 @@ in Spanish conversations — it's how Miami actually talks.
 
 These are **not** in the source skills and must not be invented by the bot:
 
-- `[CONFIRM]` Business phone / WhatsApp number
+- **Phone — resolved.** There is no single number. CallRail assigns a tracking
+  number per traffic source, and the bot gives the one matching the channel it's
+  on. See `06-phone-and-callrail.md`. One item still open there: a WhatsApp
+  source number has to be created before launch.
 - `[CONFIRM]` Operating hours and days
 - `[CONFIRM]` Website URL and social handles
 - `[CONFIRM]` Accepted payment methods

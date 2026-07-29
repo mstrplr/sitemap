@@ -13,6 +13,7 @@ skills. Drop these files into `member/kb/` in your bot folder after
 | `03-rules-and-handoff.md` | Guardrails and handoff criteria |
 | `04-tone.md` | Voice, WhatsApp formatting, seasonal angles |
 | `05-florida-tint-law.md` | VLT limits by vehicle class, AS-1 line, reflectivity, exemptions |
+| `06-phone-and-callrail.md` | Channel → tracking number map, attribution rules |
 
 ## The one design decision worth knowing
 
@@ -42,7 +43,12 @@ assume it.
 
 Everything marked `[CONFIRM]` in the KB:
 
-- [ ] Phone / WhatsApp number
+- [x] ~~Phone number~~ — resolved: CallRail tracking number per channel, see
+      `06-phone-and-callrail.md`
+- [ ] **Create a CallRail tracking number with source "WhatsApp"** before launch,
+      so the bot's own calls are attributable
+- [ ] Confirm which routing destination should receive bot-driven calls
+- [ ] Confirm the tracking numbers have SMS enabled if Jose will text follow-ups
 - [ ] Hours and days of operation
 - [ ] Website URL and social handles
 - [ ] Payment methods accepted
@@ -66,11 +72,11 @@ npx forjabot init --yes --lang en \
   --ofrece "Window tint installation, mobile service. Films: Standard/Dyed, Carbon, Ceramic. Old tint removal. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
   --horario "[YOUR HOURS]" \
   --ubicacion "Mobile service across Miami-Dade County: Miami, Hialeah, Doral, Coral Gables, Kendall, Miami Beach, Brickell, Homestead, Cutler Bay, West Miami, Sweetwater" \
-  --telefono "[YOUR NUMBER]" \
+  --telefono "[CallRail WhatsApp tracking number — create it first, see 06-phone-and-callrail.md]" \
   --web "[YOUR SITE OR INSTAGRAM]" \
   --pagos "[YOUR PAYMENT METHODS]" \
   --faq "How much does it cost?, Do you really come to me?, How long does it take?, How long does tint last?, Can I wash the car after?, How dark can I legally go?" \
-  --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Never state Florida tint law percentages as fact. Never confirm an appointment time — collect preference only. Never invent hours, warranty terms, or payment methods. Hand off on complaints, warranty claims, fleet inquiries, or anything legal." \
+  --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Phone numbers come from the CallRail channel map — never give a routing number or invent one. Never confirm an appointment time — collect preference only. Never invent hours, warranty terms, or payment methods. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
   --tono cercano \
   --cerebro claude
 ```

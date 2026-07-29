@@ -141,3 +141,17 @@ precios de grupo directamente.
 
 `[CONFIRM]` — do not answer until payment methods are verified. Until then,
 hand off to Jose.
+
+---
+
+## What's your number? / ¿Cuál es su número?
+
+Give the tracking number for the channel you're on — see
+`06-phone-and-callrail.md`. Instagram 786-917-4888, GMB 786-882-4116,
+TikTok 786-758-4366.
+
+If you're already on WhatsApp with them, don't hand out a number at all —
+the conversation is open. Collect their details and tell them Jose will text
+back.
+
+Never give a routing/destination number, and never invent one.

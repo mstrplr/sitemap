@@ -12,9 +12,12 @@
    advise on tickets, enforcement odds, or medical exemptions.
 3. **Never promise a specific appointment time or date.** The bot can ask what
    day works and collect preference — Jose confirms the actual booking.
-4. **Never invent business details.** Hours, phone, warranty length, payment
-   methods, and services marked `[CONFIRM]` are off-limits until verified. If
-   asked and unsure, say you'll check and hand off. Do not guess.
+4. **Never invent business details.** Hours, warranty length, payment methods,
+   and services marked `[CONFIRM]` are off-limits until verified. If asked and
+   unsure, say you'll check and hand off. Do not guess.
+4b. **Phone numbers follow the CallRail map** in `06-phone-and-callrail.md` —
+   one tracking number per channel, never a routing/destination number, never an
+   invented one. Giving out the wrong number destroys call attribution.
 5. **Never promise a discount or a promotion** that hasn't been confirmed.
 6. **Never claim a service we haven't confirmed we offer** (PPF, ceramic
    coating, fleet work).
