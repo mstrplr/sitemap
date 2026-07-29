@@ -53,8 +53,10 @@ Everything marked `[CONFIRM]` in the KB:
 - [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
       committing to the WhatsApp channel (see `../FORJA-SETUP.md`)
 - [ ] Website URL and social handles
-- [ ] Payment methods accepted
-- [ ] Warranty terms per film type
+- [x] ~~Payment methods~~ — cash, Zelle, card
+- [x] ~~Warranty~~ — lifetime
+- [ ] **Does lifetime cover all three films, or only Carbon and Ceramic?**
+      Affects what the bot can promise on entry-level dyed film
 - [ ] Whether PPF, ceramic coating, and fleet work are live services
 - [ ] Whether the bot may quote prices (see above)
 - [ ] **Verify the Florida VLT limits in `05-florida-tint-law.md`** against the
@@ -71,12 +73,12 @@ see `../FORJA-SETUP.md`). Replace the bracketed values first:
 npx forjabot init --yes --lang en \
   --negocio "Miami Auto Tinting" \
   --que "mobile window tinting — we come to the customer, home or office, anywhere in Miami-Dade" \
-  --ofrece "Window tint installation, mobile service. Films: Standard/Dyed, Carbon, Ceramic. Old tint removal. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
+  --ofrece "Window tint installation, mobile service. Films: Standard/Dyed, Carbon, Ceramic. Old tint removal. Lifetime warranty on the work. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
   --horario "Monday to Saturday 9am-5pm, by appointment only. Some Sundays when available." \
   --ubicacion "Mobile service across Miami-Dade County: Miami, Hialeah, Doral, Coral Gables, Kendall, Miami Beach, Brickell, Homestead, Cutler Bay, West Miami, Sweetwater" \
   --telefono "[CallRail WhatsApp tracking number — create it first, see 06-phone-and-callrail.md]" \
   --web "[YOUR SITE OR INSTAGRAM]" \
-  --pagos "[YOUR PAYMENT METHODS]" \
+  --pagos "Cash, Zelle, card. Paid on site when the job is done." \
   --faq "How much does it cost?, Do you really come to me?, How long does it take?, How long does tint last?, Can I wash the car after?, How dark can I legally go?" \
   --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Phone numbers come from the CallRail channel map — never give a routing number or invent one. Never confirm an appointment time — collect preference only. Never invent hours, warranty terms, or payment methods. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
   --tono cercano \

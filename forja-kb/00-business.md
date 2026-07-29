@@ -65,9 +65,10 @@ These are **not** in the source skills and must not be invented by the bot:
   on. See `06-phone-and-callrail.md`. One item still open there: a WhatsApp
   source number has to be created before launch.
 - **Hours — resolved.** See below.
+- **Payments — resolved.** Cash, Zelle, and card.
+- **Warranty — lifetime.** See `01-services-and-pricing.md` for how the bot
+  should talk about it, and the one open question there.
 - `[CONFIRM]` Website URL and social handles
-- `[CONFIRM]` Accepted payment methods
-- `[CONFIRM]` Exact warranty terms per film type
 - `[CONFIRM]` Whether PPF, ceramic coating, and commercial/fleet work are
   actively offered — the brand guide lists these as "si aplican" (if
   applicable), so they may not be live services

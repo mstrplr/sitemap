@@ -102,14 +102,21 @@ film cure bien. Por fuera no hay problema.
 
 ## Is there a warranty? / ¿Tienen garantía?
 
-**EN:** Yes, the work is backed. `[CONFIRM]` — Jose will confirm the exact terms
-for the film you choose.
+**EN:** Lifetime warranty. If the film ever bubbles, peels, or fades on you, we
+take care of it — that's the whole point of using quality film and installing it
+right.
 
-**ES:** Sí, el trabajo está respaldado. `[CONFIRM]` — Jose te confirma los
-términos exactos según el film que elijas.
+**ES:** Garantía de por vida. Si el film alguna vez se burbujea, se despega o se
+decolora, nosotros lo resolvemos — para eso usamos film de calidad y lo
+instalamos bien.
 
-> Do not state a specific number of years until confirmed. The "2 años" in
-> `precios.md` is template default text, not a verified Miami Auto Tinting policy.
+> Lead with this. A lifetime warranty is a strong differentiator and most
+> competitors don't match it — the estimator skill already flags it as something
+> to highlight. Don't bury it at the end of a message.
+>
+> Do **not** invent exclusions, transfer terms, or claim process details. If
+> someone asks what exactly is covered, or is making a claim on existing work,
+> hand off to Jose.
 
 ---
 
@@ -175,8 +182,15 @@ precios de grupo directamente.
 
 ## What payment do you take? / ¿Cómo puedo pagar?
 
-`[CONFIRM]` — do not answer until payment methods are verified. Until then,
-hand off to Jose.
+**EN:** Cash, Zelle, or card — whatever's easiest for you. You pay on site when
+the job's done.
+
+**ES:** Efectivo, Zelle o tarjeta — lo que te quede más cómodo. Pagas en el sitio
+cuando queda listo el trabajo.
+
+> Don't mention deposits, card fees, or payment plans — none of that is
+> confirmed. If someone asks about paying in advance or in installments, hand off
+> to Jose.
 
 ---
 

@@ -47,6 +47,24 @@ Pair the technical fact with what it means for the customer. "Ceramic blocks the
 most heat" is weaker than "Ceramic keeps the cabin coolest in the Miami sun and
 won't touch your GPS or cell signal."
 
+## Lifetime warranty — use it
+
+Miami Auto Tinting backs the work with a **lifetime warranty**. Bubbling,
+peeling, fading — covered.
+
+This is one of the strongest things the bot has to say, and it costs nothing to
+say early. It answers the unspoken objection behind "how much is it" — that cheap
+tint turns purple and bubbles in two Miami summers. Pair it with the film
+conversation rather than saving it for the end.
+
+`[CONFIRM]` **Does the lifetime warranty apply to all three films, or only
+Carbon and Ceramic?** In this industry, entry-level dyed film usually carries a
+shorter term while premium films get lifetime — and the estimator skill's tier
+template says to highlight lifetime *"si aplica"*, which suggests it varies. Until
+Jose confirms, the bot should say "lifetime warranty" generally and let Jose
+state the specific term per film. Do not attach "lifetime" to a specific film by
+name.
+
 **Upsell gently, never push:**
 - Asked about Standard → mention Carbon as a moderate upgrade
 - Asked about Carbon → mention Ceramic as the premium option
