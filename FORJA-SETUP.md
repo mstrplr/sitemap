@@ -84,6 +84,34 @@ skill. The general shape:
 4. Put the Twilio credentials into Cloudflare with `wrangler secret put`.
 5. Send a real message to confirm it round-trips.
 
+### ⚠️ Check this before you commit: the number conflict
+
+The business WhatsApp is **786-285-2690**. A phone number can only be registered
+to **one** WhatsApp Business setup at a time — either the WhatsApp Business app
+on Jose's phone, or the WhatsApp Business API through Twilio. Not both.
+
+So connecting the bot to 786-285-2690 through Twilio most likely means **losing
+the WhatsApp Business app on that phone**. Conversations would move to the bot
+and its dashboard instead of the phone Jose uses today. For a business where the
+owner answers his own messages, that's a significant change, not a technicality.
+
+Three ways through it, worth deciding before any Twilio setup:
+
+1. **Test on the Twilio sandbox first.** Costs nothing, touches no real number,
+   and shows exactly how the bot behaves before anything migrates.
+2. **Use a second number for the bot.** Keeps 786-285-2690 exactly as it is on
+   Jose's phone. Cleanest option, and the new number can be a CallRail tracking
+   number so bot conversations are attributable from day one. The tradeoff is
+   that customers who already have the old number keep landing on the phone.
+3. **Migrate 786-285-2690 to Twilio** and handle everything through the bot with
+   human handoff. Strongest long-term setup, but confirm Jose is comfortable
+   working out of the dashboard instead of the WhatsApp app.
+
+`[VERIFY]` I could not reach Twilio's or Meta's current docs from the sandbox to
+confirm the exact migration path — check this against Twilio's WhatsApp sender
+documentation before making the change, since losing access to the business line
+mid-week would hurt.
+
 Forja's own walkthrough with video: https://forjabots.com/docs/conexiones/whatsapp.html
 — follow that for the exact field names, since it's the authoritative and
 current source. (I could not open it from the sandbox to verify the specific

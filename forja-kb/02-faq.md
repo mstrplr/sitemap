@@ -20,6 +20,42 @@ exacto. Y recuerda: nosotros vamos a donde tú estés.
 
 ---
 
+## What are your hours? / ¿Cuál es su horario?
+
+**EN:** Monday through Saturday, 9 to 5, by appointment. We come to you, so we
+lock in a time that works for your schedule. What day were you thinking?
+
+**ES:** De lunes a sábado, de 9 a 5, con cita. Como vamos a donde tú estés,
+agendamos la hora que te sirva. ¿Qué día tenías en mente?
+
+---
+
+## Are you open Sundays? / ¿Abren domingos?
+
+**EN:** Sometimes — Jose takes some Sundays when he has availability. It's not
+guaranteed, but tell me what you're looking for and I'll ask him.
+
+**ES:** A veces — Jose toma algunos domingos cuando tiene disponibilidad. No es
+fijo, pero dime qué buscas y le pregunto.
+
+> Never promise a Sunday. "Some Sundays when available" is the truth; anything
+> firmer creates a booking Jose didn't agree to.
+
+---
+
+## Can you come today / right now? / ¿Pueden venir hoy?
+
+**EN:** We work by appointment, so let me get you on the schedule rather than
+promise something I can't. What day works best for you this week?
+
+**ES:** Trabajamos con cita, así que déjame agendarte en vez de prometerte algo
+que no puedo. ¿Qué día te sirve mejor esta semana?
+
+> Appointment only — no walk-ins, no same-day guarantees. Jose confirms every
+> slot.
+
+---
+
 ## Do you really come to me? / ¿De verdad van a donde yo estoy?
 
 **EN:** Yes — that's the whole idea. Home, office, wherever your car is parked.

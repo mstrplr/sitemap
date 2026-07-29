@@ -47,9 +47,11 @@ Everything marked `[CONFIRM]` in the KB:
       `06-phone-and-callrail.md`
 - [ ] **Create a CallRail tracking number with source "WhatsApp"** before launch,
       so the bot's own calls are attributable
-- [ ] Confirm which routing destination should receive bot-driven calls
 - [ ] Confirm the tracking numbers have SMS enabled if Jose will text follow-ups
-- [ ] Hours and days of operation
+- [x] ~~Hours and days of operation~~ — Mon–Sat 9–5, appointment only, some
+      Sundays when available
+- [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
+      committing to the WhatsApp channel (see `../FORJA-SETUP.md`)
 - [ ] Website URL and social handles
 - [ ] Payment methods accepted
 - [ ] Warranty terms per film type
@@ -70,7 +72,7 @@ npx forjabot init --yes --lang en \
   --negocio "Miami Auto Tinting" \
   --que "mobile window tinting — we come to the customer, home or office, anywhere in Miami-Dade" \
   --ofrece "Window tint installation, mobile service. Films: Standard/Dyed, Carbon, Ceramic. Old tint removal. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
-  --horario "[YOUR HOURS]" \
+  --horario "Monday to Saturday 9am-5pm, by appointment only. Some Sundays when available." \
   --ubicacion "Mobile service across Miami-Dade County: Miami, Hialeah, Doral, Coral Gables, Kendall, Miami Beach, Brickell, Homestead, Cutler Bay, West Miami, Sweetwater" \
   --telefono "[CallRail WhatsApp tracking number — create it first, see 06-phone-and-callrail.md]" \
   --web "[YOUR SITE OR INSTAGRAM]" \

@@ -29,6 +29,25 @@ Miami is a bilingual market. **Reply in whatever language the customer writes
 in.** English is the most common; Spanish is frequent. Natural Spanglish is fine
 in Spanish conversations — it's how Miami actually talks.
 
+## Hours — appointment only
+
+**Monday to Saturday, 9:00 AM – 5:00 PM. By appointment only.**
+Some Sundays when available.
+
+**"By appointment only" is a real business rule, not a detail.** The bot must
+never imply a customer can just call and have someone show up, or drop in
+somewhere — there is no shop to drop into, and the day is booked in advance.
+Every conversation is working toward *scheduling*, not toward immediate service.
+
+On Sundays: never promise one. The honest framing is that Sundays happen
+sometimes when Jose has availability, and he'd have to confirm. Don't turn "some
+Sundays" into "we're open Sundays."
+
+Since installs run 2–4 hours and the day ends at 5 PM, a job realistically needs
+to start by early afternoon. The bot shouldn't do that math out loud or refuse a
+time — it collects the customer's preferred day and lets Jose set the actual
+slot.
+
 ## Why customers choose us
 
 1. **Mobile service** — no time lost driving to a shop
@@ -45,7 +64,7 @@ These are **not** in the source skills and must not be invented by the bot:
   number per traffic source, and the bot gives the one matching the channel it's
   on. See `06-phone-and-callrail.md`. One item still open there: a WhatsApp
   source number has to be created before launch.
-- `[CONFIRM]` Operating hours and days
+- **Hours — resolved.** See below.
 - `[CONFIRM]` Website URL and social handles
 - `[CONFIRM]` Accepted payment methods
 - `[CONFIRM]` Exact warranty terms per film type

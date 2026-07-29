@@ -22,7 +22,10 @@ Números de rastreo activos (de la plataforma de CallRail):
 | TikTok | **786-758-4366** |
 | Google Ads (miamiautotintmobile.com) | pool dinámico — ver abajo |
 | southmiamitint.com | pool dinámico — ver abajo |
-| WhatsApp | `[CREAR]` — ver abajo |
+| WhatsApp | no dar número — ya están conversando |
+
+> **786-285-2690 nunca va en esta tabla.** Es la línea real del negocio (el
+> WhatsApp) y el destino de routing de CallRail. Ver la sección de WhatsApp.
 
 ### Los pools dinámicos
 
@@ -39,15 +42,34 @@ esos sitios, hay dos opciones:
    *(Recomendado — no interfiere con el DNI.)*
 2. Crear un número fijo aparte con fuente "Web Chat" para el bot.
 
-### WhatsApp — hay que crear el número
+### WhatsApp — 786-285-2690
 
-No existe todavía un número de rastreo con fuente WhatsApp. **Créalo en CallRail
-antes de lanzar el bot** (botón *Create number*, fuente "WhatsApp" o "WhatsApp
-Bot").
+**El WhatsApp del negocio es 786-285-2690.** Ahí es donde vive la conversación
+del bot.
 
-Vale la pena aunque dé algo de trabajo: es la única forma de contestar
-"¿el chatbot me está generando llamadas o no?". Sin eso, las llamadas que salgan
-del bot se mezclan con el resto y no vas a saber si el bot se paga solo.
+**Pero ese número NO se da como "llámanos".** 786-285-2690 es también el
+**destino de routing** de CallRail — es la línea real a la que se reenvían las
+llamadas de GMB, Instagram y TikTok. Si el bot lo reparte como número para
+llamar, la gente marca directo, se salta el rastreo, y esa llamada nunca queda
+atribuida a ninguna fuente.
+
+La distinción, que es sutil pero importante:
+
+| | Número |
+|---|---|
+| Donde el bot **conversa** | 786-285-2690 (WhatsApp) |
+| Lo que el bot **da para llamar** | el número de rastreo del canal (ver tabla arriba) |
+
+En la práctica, si ya estás hablando con alguien por WhatsApp casi nunca hace
+falta darle un número — la conversación ya está abierta. Recoge los datos y dile
+que Jose le escribe.
+
+### Pendiente: número de rastreo para WhatsApp
+
+No existe una fuente "WhatsApp" en CallRail. Vale la pena crearla (*Create
+number*) para poder medir si el bot genera llamadas. Sin eso, lo que produzca el
+bot se mezcla con el resto y no vas a saber si se paga solo — que es la métrica
+que más importa el primer mes.
 
 ## Reglas duras para el bot
 
@@ -64,10 +86,10 @@ del bot se mezclan con el resto y no vas a saber si el bot se paga solo.
 
 ## Nota de atribución
 
-Hay dos destinos de routing distintos configurados en la cuenta, y varios
-números desactivados (43). Antes de lanzar, vale la pena confirmar con Jose:
+Hay dos destinos de routing en la cuenta — 786-285-2690 (el WhatsApp, recibe
+GMB / Instagram / TikTok) y 786-269-8850 (recibe los pools de los dos sitios
+web). Además hay 43 números desactivados.
 
-- `[CONFIRM]` ¿Cuál de los dos destinos debe recibir las llamadas del bot?
 - `[CONFIRM]` ¿Los números de rastreo tienen SMS habilitado? Si el bot o Jose van
   a mandar texto de seguimiento, el número tiene que soportar mensajes, no solo
   llamadas.
