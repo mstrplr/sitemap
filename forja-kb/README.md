@@ -15,31 +15,33 @@ skills. Drop these files into `member/kb/` in your bot folder after
 | `05-florida-tint-law.md` | VLT limits by vehicle class, AS-1 line, reflectivity, exemptions |
 | `06-phone-and-callrail.md` | Channel → tracking number map, attribution rules |
 
-## ⏳ Blocking item: the price table is empty
-
-`01-services-and-pricing.md` has a price table that still says `[FILL]`.
-
-The averages come from **miamiautotintmobile.com**, which I could not read — the
-build sandbox blocks outbound HTTPS to it (403 from the egress proxy). **Paste
-the numbers in and the bot is ready to quote.**
-
-Until that table is filled, the bot falls back to collecting vehicle details and
-handing off to Jose. It won't invent a number, but it also won't convert as well.
-
 ## How pricing works
 
-The bot gives **averages, never firm quotes** — always *usually / around /
-typically*, always followed by "Jose confirms the exact number."
+Three published tiers, all **"from"** prices:
 
-Two carve-outs matter:
+| Tier | Film | Full vehicle | 2 fronts only | Warranty |
+|---|---|---|---|---|
+| 🥇 Flagship ⭐ | 3M Ceramic IR | from $449 | $249 | **Lifetime** |
+| 🥈 Performance | UVIRON Ceramic KoolMax | from $299 | $199 | 3 years |
+| 🥉 Value | Supreme Carbon KoolMax | from $249 | $149.99 | 2 years |
 
-- **Teslas and big-glass vehicles** (also Suburban, Sprinter) run higher than the
-  averages. The bot never applies the sedan average to these — it explains why
-  and hands off. Quoting low and having Jose come back higher loses the customer.
-- **Don't use `window-tint-estimator/references/precios.md`.** That file is the
-  untouched skill template — business name, phone, and address are still
-  `[Tu Nombre de Negocio]` placeholders, and its prices are the author's
-  examples, not yours.
+Four rules the bot follows:
+
+- **"Starts at," never "it's."** Every number is a from-price; Jose confirms the
+  exact figure when he sees the car.
+- **Ask whether the rear windows are already tinted.** Someone who only needs the
+  two fronts matched pays $149.99–$249, not $249–$449. Quoting the full job to
+  them loses a sale that was already yours.
+- **Teslas and big-glass vehicles** (also Suburban, Sprinter) run higher. The bot
+  explains why and hands off rather than quoting low — a customer who feels
+  quoted and then hears a higher number walks.
+- **Name the full film for any warranty claim.** "KoolMax" is two different films
+  at two different warranties.
+
+> **Don't use `window-tint-estimator/references/precios.md`.** That file is the
+> untouched skill template — its business name, phone, and address are still
+> `[Tu Nombre de Negocio]` placeholders, and its prices ($180 sedan, "2 años")
+> are the author's examples, not yours.
 
 ## Before you go live — fill these in
 
@@ -49,17 +51,17 @@ Everything marked `[CONFIRM]` in the KB:
 - [x] ~~Website~~ — southmiamitint.com
 - [x] ~~Hours~~ — Mon–Sat 9–5, appointment only, some Sundays when available
 - [x] ~~Payment methods~~ — cash, Zelle, card
-- [x] ~~Films and warranty~~ — KoolMax 3 years, SunTek and 3M lifetime
+- [x] ~~Films, prices and warranty~~ — three tiers, see table above
 - [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
       committing to the WhatsApp channel (see `../FORJA-SETUP.md`) — this is the
       one that can take the business line down mid-week
-- [ ] **Fill the price table** in `01-services-and-pricing.md` from
-      miamiautotintmobile.com — blocks the bot from quoting at all
-- [ ] What the average covers (full car? sides and rear only?)
-- [ ] Old tint removal — average add-on, or always Jose?
+- [x] ~~Price table~~ — filled from miamiautotintmobile.com
+- [ ] **Do you offer SunTek?** It's not on the pricing page. The bot doesn't
+      mention it until confirmed
+- [ ] Old tint removal — flat add-on, or always Jose?
 - [ ] Is there a standard Tesla uplift, or always case by case?
-- [ ] Which of SunTek or 3M is the top tier vs. the "most popular" middle
-- [ ] Which film lines Jose stocks within each brand
+- [ ] The site's call banner shows **786-269-8850**, but the bot gives
+      786-285-2690 — intentional?
 - [ ] Whether PPF, ceramic coating, and fleet work are live services
 - [ ] Confirm 786-285-2690 has SMS enabled if Jose will text follow-ups
 - [ ] **Verify the Florida VLT limits in `05-florida-tint-law.md`** against the
@@ -76,14 +78,14 @@ see `../FORJA-SETUP.md`). Replace the bracketed values first:
 npx forjabot init --yes --lang en \
   --negocio "Miami Auto Tinting" \
   --que "mobile window tinting — we come to the customer, home or office, anywhere in Miami-Dade" \
-  --ofrece "Window tint installation, mobile service. Films: KoolMax (3 year warranty), SunTek and 3M (lifetime warranty). Old tint removal. Pricing quoted per vehicle by Jose — the bot never quotes prices." \
+  --ofrece "Mobile window tint installation. Three films, full vehicle (5 windows): Supreme Carbon KoolMax from \$249 (2-year warranty), UVIRON Ceramic KoolMax from \$299 (3-year), 3M Ceramic IR from \$449 (LIFETIME warranty, most popular). Matching just the 2 front windows: \$149.99 / \$199 / \$249. Old tint removal available. All prices are FROM prices; Jose confirms exact." \
   --horario "Monday to Saturday 9am-5pm, by appointment only. Some Sundays when available." \
   --ubicacion "Mobile service across Miami-Dade County: Miami, Hialeah, Doral, Coral Gables, Kendall, Miami Beach, Brickell, Homestead, Cutler Bay, West Miami, Sweetwater" \
   --telefono "786-285-2690" \
   --web "southmiamitint.com" \
   --pagos "Cash, Zelle, card. Paid on site when the job is done." \
   --faq "How much does it cost?, Do you really come to me?, What are your hours?, How long does it take?, What brands do you use?, Is there a warranty?, How dark can I legally go?, Can I wash the car after?" \
-  --reglas "Prices are AVERAGES, never firm quotes — always say 'usually around $X' and add that Jose confirms the exact number. NEVER quote a Tesla, Suburban, Sprinter or any big-glass vehicle from the average: bigger glass costs more, explain that and hand off to Jose. Warranty depends on the film: SunTek and 3M are lifetime, KoolMax is 3 years — never say lifetime without naming the brand. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Service is appointment only Mon-Sat 9-5, some Sundays when available — never promise same-day, walk-ins, or a guaranteed Sunday. Never confirm an appointment time, only collect the preferred day. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
+  --reglas "Every price is a FROM price — say 'starts at \$249', never 'it's \$249', and always add that Jose confirms the exact number. Ask whether the rear windows are already tinted: matching only the 2 front windows is much cheaper than the full vehicle. NEVER quote a Tesla, Suburban, Sprinter or any big-glass vehicle from the published price: bigger glass costs more, explain that and hand off to Jose. Warranty is per film: 3M Ceramic IR is LIFETIME, UVIRON Ceramic KoolMax is 3 years, Supreme Carbon KoolMax is 2 years — never say just 'KoolMax' for a warranty, two films share that name. Never mention SunTek. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Service is appointment only Mon-Sat 9-5, some Sundays when available — never promise same-day, walk-ins, or a guaranteed Sunday. Never confirm an appointment time, only collect the preferred day. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
   --tono cercano \
   --cerebro claude
 ```

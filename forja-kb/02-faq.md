@@ -6,23 +6,23 @@ Answers are short on purpose. Answer the question, then move toward booking.
 
 ## How much does it cost? / ¿Cuánto cuesta?
 
-**EN:** Depends on the vehicle and the film. Tell me the year, make, and model
-and I'll give you a ballpark — Jose confirms the exact number when he sees the
-car. And remember, we come to you, so there's no driving to a shop.
+**EN:** Full vehicle starts at $249 for the Supreme Carbon, $299 for the UVIRON
+Ceramic, and $449 for the 3M Ceramic IR — that's 5 windows, and we come to you.
+What kind of car is it? Jose confirms the exact number once he sees it.
 
-**ES:** Depende del carro y del film. Dime año, marca y modelo y te doy un
-aproximado — Jose te confirma el número exacto cuando vea el carro. Y recuerda
-que vamos a donde tú estés, no tienes que manejar a ningún taller.
-
-Then, with the vehicle and film known, give the average from the table in
-`01-services-and-pricing.md`, always worded as *usually / around / typically*.
+**ES:** Carro completo empieza en $249 con el Supreme Carbon, $299 con el UVIRON
+Ceramic y $449 con el 3M Ceramic IR — eso son 5 ventanas, y vamos a donde tú
+estés. ¿Qué carro es? Jose te confirma el número exacto cuando lo vea.
 
 > This is the most common question and the most important one to get right.
-> Three ways to get it wrong:
-> - Stating a number as firm ("it's $X") instead of an average
-> - Quoting the sedan average for a **Tesla** or other big-glass vehicle — those
->   run higher, hand off instead
-> - Quoting anything at all while the price table is still unfilled
+> Four ways to get it wrong:
+> - Saying "it's $X" instead of "starts at $X" — every published price is a
+>   **from** price
+> - Quoting the full-vehicle price to someone who only needs the two fronts
+>   matched ($149.99+). Ask whether the rear windows are already tinted.
+> - Quoting the standard price for a **Tesla** or other big-glass vehicle —
+>   those run higher, hand off instead
+> - Forgetting to close on the day
 
 ---
 
@@ -108,19 +108,19 @@ film cure bien. Por fuera no hay problema.
 
 ## Is there a warranty? / ¿Tienen garantía?
 
-**EN:** Depends on the film. SunTek and 3M both come with a **lifetime**
-warranty — bubbling, peeling, fading, we handle it. KoolMax, our budget option,
-carries **3 years**.
+**EN:** Depends on the film. The 3M Ceramic IR carries a **lifetime** warranty —
+bubbling, peeling, fading, we handle it for as long as you own the car. The
+UVIRON Ceramic is 3 years, and the Supreme Carbon is 2.
 
-**ES:** Depende del film. SunTek y 3M traen garantía **de por vida** — si se
-burbujea, se despega o se decolora, nosotros lo resolvemos. KoolMax, la opción
-económica, tiene **3 años**.
+**ES:** Depende del film. El 3M Ceramic IR trae garantía **de por vida** — si se
+burbujea, se despega o se decolora, lo resolvemos mientras tengas el carro. El
+UVIRON Ceramic es de 3 años y el Supreme Carbon de 2.
 
-> Lead with the lifetime option. It's a strong differentiator and the estimator
-> skill already flags it as something to highlight — don't bury it.
+> Lead with the lifetime option — it's the strongest thing we have to say.
 >
-> Always tie the warranty to the brand. "Lifetime warranty" said flatly promises
-> something KoolMax doesn't carry.
+> **Never say "KoolMax is X years."** Two different films carry the KoolMax name
+> with two different warranties (UVIRON Ceramic = 3 yr, Supreme Carbon = 2 yr).
+> Always name the full film.
 >
 > Do **not** invent exclusions, transfer terms, or claim process details. If
 > someone asks exactly what's covered, or is making a claim on existing work,
@@ -128,28 +128,38 @@ económica, tiene **3 años**.
 
 ---
 
-## What brands do you use? / ¿Qué marcas manejan?
+## What films do you offer? / ¿Qué films manejan?
 
-**EN:** KoolMax, SunTek, and 3M. The big difference is the warranty — SunTek and
-3M are lifetime, KoolMax is 3 years. What's your budget looking like and I'll
-point you at the right one?
+**EN:** Three options, full vehicle:
+• Supreme Carbon KoolMax — from $249, 2-year warranty
+• UVIRON Ceramic KoolMax — from $299, 3-year warranty
+• 3M Ceramic IR — from $449, *lifetime* warranty ⭐ most popular
 
-**ES:** KoolMax, SunTek y 3M. La diferencia grande es la garantía — SunTek y 3M
-son de por vida, KoolMax es de 3 años. ¿Cómo andas de presupuesto y te oriento?
+If your rear windows are already tinted and you just want the two fronts
+matched, that starts at $149.99.
+
+**ES:** Tres opciones, carro completo:
+• Supreme Carbon KoolMax — desde $249, garantía de 2 años
+• UVIRON Ceramic KoolMax — desde $299, garantía de 3 años
+• 3M Ceramic IR — desde $449, garantía *de por vida* ⭐ el más popular
+
+Si las traseras ya están tintadas y solo quieres las dos delanteras, eso empieza
+en $149.99.
 
 ---
 
 ## Which one should I get? / ¿Cuál me conviene?
 
-**EN:** Honestly, most people are happiest with SunTek or 3M — the lifetime
-warranty is what you want with Miami sun beating on the car every day. KoolMax
-does the job if you're watching the budget, just with 3 years of coverage
-instead. Jose can walk you through both when he gives you pricing.
+**EN:** Most people go with the 3M Ceramic IR — the lifetime warranty is what you
+want with Miami sun on the car every single day, and it's got the strongest heat
+rejection of the three. The Supreme Carbon at $249 is a real film and does the
+job if you're watching the budget, just with 2 years of coverage instead of
+forever.
 
-**ES:** La verdad, la mayoría queda más contenta con SunTek o 3M — la garantía de
-por vida es lo que quieres con el sol de Miami pegándole al carro todos los días.
-KoolMax cumple si andas cuidando el presupuesto, nada más que con 3 años de
-cobertura. Jose te explica las dos cuando te dé el precio.
+**ES:** La mayoría se va con el 3M Ceramic IR — la garantía de por vida es lo que
+quieres con el sol de Miami pegándole al carro todos los días, y es el que más
+calor bloquea de los tres. El Supreme Carbon de $249 es buen film y cumple si
+andas cuidando el presupuesto, nada más que con 2 años en vez de para siempre.
 
 ---
 

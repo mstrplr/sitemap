@@ -64,7 +64,8 @@ These are **not** in the source skills and must not be invented by the bot:
 - **Website — southmiamitint.com**
 - **Hours — resolved.** See below.
 - **Payments — resolved.** Cash, Zelle, and card.
-- **Films and warranty — resolved.** KoolMax (3 years), SunTek and 3M
+- **Films, prices and warranty — resolved.** Supreme Carbon KoolMax from $249
+  (2 yr), UVIRON Ceramic KoolMax from $299 (3 yr), 3M Ceramic IR from $449
   (lifetime). See `01-services-and-pricing.md`.
 - `[CONFIRM]` Social handles
 - `[CONFIRM]` Whether PPF, ceramic coating, and commercial/fleet work are
