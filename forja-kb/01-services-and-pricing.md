@@ -1,26 +1,79 @@
-# Services & the Pricing Rule
+# Services & Pricing
 
-## ⚠️ The pricing rule — read this first
+## The pricing rule
 
-**The bot must never quote a price.** Not a number, not a range, not a
-"starting at."
+The bot **may give average prices** — the same averages published on
+miamiautotintmobile.com. It must **never give a firm quote**.
 
-This is not caution for its own sake. Two independent sources in the business
-say so:
+Every price the bot says is framed as an average, and Jose confirms the exact
+number. The wording that does this cleanly:
 
-1. `window-tint-estimator/SKILL.md`: *"Jose siempre dice qué ventanas se
-   incluyen y el precio de cada film. NO inventes precios ni asumas qué ventanas
-   van — pregúntale a Jose si no los dio. Cada quote es distinto."*
-2. `gbp-media-optimizer/references/brand-voice.md`, under phrases to avoid:
-   *"Precios exactos en posts (dirige a cotización)."*
+> **EN:** For a sedan that usually runs around $X — Jose confirms the exact
+> price once he sees the car.
+>
+> **ES:** Para un sedán normalmente anda por los $X — Jose te confirma el precio
+> exacto cuando vea el carro.
 
-The price table in `window-tint-estimator/references/precios.md` is **the
-unedited template default**, not Miami Auto Tinting's real pricing — the
-business name, phone, and address in that same file are still `[Tu Nombre de
-Negocio]` placeholders. Those numbers must not reach a customer.
+Never say "it's $X," "the price is $X," or "I'll do it for $X." Always *usually*,
+*around*, *typically*.
 
-**What the bot does instead:** gather the details Jose needs, set expectations,
-and hand off.
+> ⚠️ **Do not use the numbers in
+> `window-tint-estimator/references/precios.md`.** That file is the unedited
+> skill template — its business name, phone, and address are still
+> `[Tu Nombre de Negocio]` placeholders, and its prices are the template
+> author's examples, not Miami Auto Tinting's. The real averages go in the table
+> below.
+
+## ⏳ Average prices — TO FILL IN
+
+**These are the numbers from miamiautotintmobile.com.** I could not read the
+site from the build environment (the sandbox blocks outbound HTTPS), so this
+table is a placeholder. Fill it in before the bot goes live — until then the bot
+must fall back to collecting details and handing off to Jose.
+
+| Vehicle | KoolMax (3 yr) | SunTek (lifetime) | 3M (lifetime) |
+|---|---|---|---|
+| Sedan | `[FILL]` | `[FILL]` | `[FILL]` |
+| Coupe | `[FILL]` | `[FILL]` | `[FILL]` |
+| SUV / Crossover | `[FILL]` | `[FILL]` | `[FILL]` |
+| Pickup / Truck | `[FILL]` | `[FILL]` | `[FILL]` |
+| Van / Minivan | `[FILL]` | `[FILL]` | `[FILL]` |
+
+`[FILL]` Which windows the average covers (full car? sides and rear only?) —
+the estimator skill is explicit that what's included changes per quote, so the
+bot has to state what the average buys.
+
+`[FILL]` Old tint removal — the estimator skill notes this adds cost. Average
+add-on, or always Jose?
+
+## 🚗 Teslas and big-glass vehicles — do not quote the average
+
+**Teslas run higher than the averages because the glass is larger.** Model 3 and
+Model Y in particular have oversized side glass and a full glass roof, so the
+material and labor don't match a normal sedan.
+
+**The bot must not apply the sedan average to a Tesla.** Saying "around $X" and
+then having Jose come back higher is the fastest way to lose a customer who
+already felt quoted.
+
+What the bot says instead:
+
+> **EN:** Teslas run a bit higher than a standard sedan — the glass is bigger, so
+> there's more material and more labor. Jose will get you an exact number. Which
+> model is it?
+>
+> **ES:** Los Tesla salen un poco más que un sedán normal — el vidrio es más
+> grande, así que es más material y más trabajo. Jose te da el número exacto.
+> ¿Cuál modelo es?
+
+The same applies to any vehicle with unusually large or numerous glass: the
+estimator skill already flags **Suburban** and **Sprinter** as costing extra.
+When in doubt about whether a vehicle fits the average, don't quote it — ask
+Jose.
+
+`[CONFIRM]` Is there a standard Tesla uplift (a percentage or flat add-on), or
+is it always case by case? If there's a rule, the bot can quote it and convert
+better.
 
 ## What the bot collects for a quote
 
@@ -33,8 +86,15 @@ Ask conversationally, not as a form dump:
 4. **Old tint to remove?** — this affects the job
 5. **Where and when** — location for the mobile appointment, preferred day
 
-Then: *"Let me get these to Jose and he'll come back with exact pricing for your
-[vehicle]. What day works best for you this week?"*
+Once you know the vehicle and film, give the **average** for that combination
+(see the table above), then close on the day:
+
+> *"For a [vehicle] in [film] that usually runs around $X. Jose confirms the
+> exact number when he sees the car. What day works best for you this week?"*
+
+If the vehicle is a Tesla, a Suburban, a Sprinter, or anything with oversized
+glass — skip the average and hand off. If the price table isn't filled in yet,
+collect the details and hand off.
 
 ## The film lineup — three brands, two warranty tiers
 

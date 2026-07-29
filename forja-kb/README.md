@@ -15,29 +15,31 @@ skills. Drop these files into `member/kb/` in your bot folder after
 | `05-florida-tint-law.md` | VLT limits by vehicle class, AS-1 line, reflectivity, exemptions |
 | `06-phone-and-callrail.md` | Channel → tracking number map, attribution rules |
 
-## The one design decision worth knowing
+## ⏳ Blocking item: the price table is empty
 
-**This bot does not quote prices.** It qualifies the lead — year/make/model,
-windows, film interest, old tint, location, preferred day — and hands off to
-Jose.
+`01-services-and-pricing.md` has a price table that still says `[FILL]`.
 
-That came from your own material, in two places:
+The averages come from **miamiautotintmobile.com**, which I could not read — the
+build sandbox blocks outbound HTTPS to it (403 from the egress proxy). **Paste
+the numbers in and the bot is ready to quote.**
 
-- `window-tint-estimator/SKILL.md`: *"NO inventes precios ni asumas qué ventanas
-  van — pregúntale a Jose si no los dio. Cada quote es distinto."*
-- `brand-voice.md` lists *"Precios exactos"* under phrases to avoid, directing to
-  a quote instead.
+Until that table is filled, the bot falls back to collecting vehicle details and
+handing off to Jose. It won't invent a number, but it also won't convert as well.
 
-The price tables in `window-tint-estimator/references/precios.md` are **still
-the untouched template defaults** — that file's business name, phone, and
-address are literally `[Tu Nombre de Negocio]`, `[Tu número de WhatsApp]`, and
-`[Tu dirección]`. Its numbers ($180 sedan, $280 ceramic sedan, "2 años" warranty,
-"Lunes a Sábado 8am–6pm") are the skill author's examples, not your rates.
-Feeding them to a customer-facing bot would have it quoting prices you never set.
+## How pricing works
 
-If those numbers *are* actually right, tell me and I'll rewrite the KB to let the
-bot quote directly — it's a much stronger bot when it can. But I'm not going to
-assume it.
+The bot gives **averages, never firm quotes** — always *usually / around /
+typically*, always followed by "Jose confirms the exact number."
+
+Two carve-outs matter:
+
+- **Teslas and big-glass vehicles** (also Suburban, Sprinter) run higher than the
+  averages. The bot never applies the sedan average to these — it explains why
+  and hands off. Quoting low and having Jose come back higher loses the customer.
+- **Don't use `window-tint-estimator/references/precios.md`.** That file is the
+  untouched skill template — business name, phone, and address are still
+  `[Tu Nombre de Negocio]` placeholders, and its prices are the author's
+  examples, not yours.
 
 ## Before you go live — fill these in
 
@@ -51,11 +53,15 @@ Everything marked `[CONFIRM]` in the KB:
 - [ ] **Check the Twilio ↔ WhatsApp Business conflict** on 786-285-2690 before
       committing to the WhatsApp channel (see `../FORJA-SETUP.md`) — this is the
       one that can take the business line down mid-week
+- [ ] **Fill the price table** in `01-services-and-pricing.md` from
+      miamiautotintmobile.com — blocks the bot from quoting at all
+- [ ] What the average covers (full car? sides and rear only?)
+- [ ] Old tint removal — average add-on, or always Jose?
+- [ ] Is there a standard Tesla uplift, or always case by case?
 - [ ] Which of SunTek or 3M is the top tier vs. the "most popular" middle
 - [ ] Which film lines Jose stocks within each brand
 - [ ] Whether PPF, ceramic coating, and fleet work are live services
 - [ ] Confirm 786-285-2690 has SMS enabled if Jose will text follow-ups
-- [ ] Whether the bot may quote prices (see above)
 - [ ] **Verify the Florida VLT limits in `05-florida-tint-law.md`** against the
       current FLHSMV statute text. They've been stable for years, but the bot
       states them to customers as fact — worth one check against the source, and
@@ -77,7 +83,7 @@ npx forjabot init --yes --lang en \
   --web "southmiamitint.com" \
   --pagos "Cash, Zelle, card. Paid on site when the job is done." \
   --faq "How much does it cost?, Do you really come to me?, What are your hours?, How long does it take?, What brands do you use?, Is there a warranty?, How dark can I legally go?, Can I wash the car after?" \
-  --reglas "NEVER quote a price — collect year/make/model, windows, and film interest, then hand off to Jose. Warranty depends on the film: SunTek and 3M are lifetime, KoolMax is 3 years — never say lifetime without naming the brand. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Service is appointment only Mon-Sat 9-5, some Sundays when available — never promise same-day, walk-ins, or a guaranteed Sunday. Never confirm an appointment time, only collect the preferred day. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
+  --reglas "Prices are AVERAGES, never firm quotes — always say 'usually around $X' and add that Jose confirms the exact number. NEVER quote a Tesla, Suburban, Sprinter or any big-glass vehicle from the average: bigger glass costs more, explain that and hand off to Jose. Warranty depends on the film: SunTek and 3M are lifetime, KoolMax is 3 years — never say lifetime without naming the brand. Florida tint limits: 28% front sides all vehicles, 15% rear on sedans, 6% rear on SUVs/vans — but never say a specific film will be legal on a specific car, since the law measures film plus factory glass. Service is appointment only Mon-Sat 9-5, some Sundays when available — never promise same-day, walk-ins, or a guaranteed Sunday. Never confirm an appointment time, only collect the preferred day. Hand off on complaints, warranty claims, fleet inquiries, tint tickets, or medical exemptions." \
   --tono cercano \
   --cerebro claude
 ```

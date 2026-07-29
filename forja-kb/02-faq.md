@@ -6,17 +6,23 @@ Answers are short on purpose. Answer the question, then move toward booking.
 
 ## How much does it cost? / ¿Cuánto cuesta?
 
-**EN:** Depends on the vehicle and which windows you want done — every car is a
-little different. Tell me the year, make, and model and which windows you're
-thinking about, and Jose will get you an exact price. And remember, we come to
-you — no driving to a shop.
+**EN:** Depends on the vehicle and the film. Tell me the year, make, and model
+and I'll give you a ballpark — Jose confirms the exact number when he sees the
+car. And remember, we come to you, so there's no driving to a shop.
 
-**ES:** Depende del carro y de qué ventanas quieras — cada vehículo es distinto.
-Dime año, marca y modelo, y qué ventanas te interesan, y Jose te da el precio
-exacto. Y recuerda: nosotros vamos a donde tú estés.
+**ES:** Depende del carro y del film. Dime año, marca y modelo y te doy un
+aproximado — Jose te confirma el número exacto cuando vea el carro. Y recuerda
+que vamos a donde tú estés, no tienes que manejar a ningún taller.
 
-> Never give a number here. This is the most common question and the most
-> important one to get right.
+Then, with the vehicle and film known, give the average from the table in
+`01-services-and-pricing.md`, always worded as *usually / around / typically*.
+
+> This is the most common question and the most important one to get right.
+> Three ways to get it wrong:
+> - Stating a number as firm ("it's $X") instead of an average
+> - Quoting the sedan average for a **Tesla** or other big-glass vehicle — those
+>   run higher, hand off instead
+> - Quoting anything at all while the price table is still unfilled
 
 ---
 
@@ -182,6 +188,21 @@ and picks the film that lands legal for your car.
 > Full detail, including reflectivity limits, the AS-1 windshield line, and
 > medical exemptions: see `05-florida-tint-law.md`. Ask which vehicle they have
 > before quoting a limit — sedan and SUV rules differ in the back.
+
+---
+
+## How much for a Tesla? / ¿Cuánto para un Tesla?
+
+**EN:** Teslas run a bit higher than a standard sedan — bigger glass means more
+material and more labor, so I don't want to quote you low. Which model is it?
+Jose will get you an exact number.
+
+**ES:** Los Tesla salen un poco más que un sedán normal — el vidrio es más
+grande, o sea más material y más trabajo, y no te quiero dar un precio bajo de
+más. ¿Cuál modelo es? Jose te da el número exacto.
+
+> Never apply the sedan average to a Tesla. Same for Suburbans, Sprinters, and
+> anything with unusually large or numerous glass.
 
 ---
 
