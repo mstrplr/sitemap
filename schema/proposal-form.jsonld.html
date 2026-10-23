@@ -1,0 +1,79 @@
+<!-- JSON-LD for https://southmiamitint.com/proposal-form
+     Paste into the <head> of the /proposal-form page (e.g. Wix: Page SEO > Advanced SEO > Structured data markup,
+     or Settings > Custom Code > Head, scoped to this page only). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://southmiamitint.com/proposal-form#webpage",
+      "url": "https://southmiamitint.com/proposal-form",
+      "name": "Fast Mobile Window Tint Quote in Miami | Miami Auto Tinting",
+      "headline": "Get Your 30-Second Mobile Window Tint Quote",
+      "description": "Get a fast quote for mobile car window tinting in Miami-Dade. Send your vehicle details and get accurate pricing for ceramic or carbon tint.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://southmiamitint.com/#website",
+        "url": "https://southmiamitint.com/",
+        "name": "Miami Auto Tinting"
+      },
+      "about": { "@id": "https://southmiamitint.com/#business" },
+      "mainEntity": { "@id": "https://southmiamitint.com/proposal-form#service" },
+      "potentialAction": {
+        "@type": "CommunicateAction",
+        "name": "Request a mobile window tint quote",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://southmiamitint.com/proposal-form",
+          "actionPlatform": [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform"
+          ]
+        }
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://southmiamitint.com/#business",
+      "url": "https://southmiamitint.com/",
+      "name": "Miami Auto Tinting",
+      "description": "Mobile car window tinting services serving Miami-Dade, including ceramic and carbon window tint options.",
+      "areaServed": { "@type": "AdministrativeArea", "name": "Miami-Dade County" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mobile Window Tinting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile car window tinting quote", "serviceType": "Window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic window tinting", "serviceType": "Automotive window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carbon window tinting", "serviceType": "Automotive window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Old window tint removal", "serviceType": "Automotive window tinting" } }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://southmiamitint.com/proposal-form#service",
+      "url": "https://southmiamitint.com/proposal-form",
+      "name": "Mobile Car Window Tinting Quote",
+      "description": "Request a fast, personalized quote for mobile car window tinting in Miami-Dade. Choose ceramic or carbon tint and specify the vehicle windows you want tinted.",
+      "serviceType": "Mobile automotive window tinting",
+      "provider": { "@id": "https://southmiamitint.com/#business" },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Miami-Dade County" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Window Tinting Options",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramic window tint" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carbon window tint" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Front window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-car window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Windshield window tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Old tint removal" } }
+        ]
+      }
+    }
+  ]
+}
+</script>
